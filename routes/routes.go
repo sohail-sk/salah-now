@@ -34,5 +34,7 @@ func SetupRouter() *gin.Engine {
 	}
 	protected.GET("/streak", handlers.GetStreak)
 	protected.GET("/dashboard", handlers.GetDashboard)
+	protected.GET("/prayer-times", handlers.GetPrayerTimes)
+	protected.POST("/user/location", handlers.UpdateLocation)
 	return r
 }
